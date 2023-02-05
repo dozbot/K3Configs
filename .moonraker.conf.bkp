@@ -3,9 +3,6 @@ host = 0.0.0.0
 port = 7125
 max_upload_size = 1024
 
-[file_manager]
-enable_object_processing = True
-
 [authorization]
 cors_domains = 
 	https://my.mainsail.xyz
@@ -20,6 +17,9 @@ trusted_clients =
 	192.168.0.0/16
 	FE80::/10
 	::1/128
+
+[file_manager]
+enable_object_processing = True
 
 [octoprint_compat]
 
