@@ -39,6 +39,19 @@ path = ~/crowsnest
 origin = https://github.com/mainsail-crew/crowsnest.git
 install_script = tools/install.sh
 
+[update_manager beacon]
+type = git_repo
+channel = dev
+path = ~/beacon_klipper
+origin = https://github.com/beacon3d/beacon_klipper.git
+env = ~/klippy-env/bin/python
+requirements = requirements.txt
+install_script = install.sh
+is_system_service = False
+managed_services = klipper
+info_tags = 
+	desc=Beacon Surface Scanner
+
 [wled rgb]
 address = 192.168.1.223
 initial_preset = 1
